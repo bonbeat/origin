@@ -1,0 +1,125 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1 align="center">PORTFOLIO</h1>
+  </div>
+</div>
+
+<div class="row" align="center">
+  <div class="col-xs-4">
+    <h2>BLOG</h2>
+  </div>
+  <div class="col-xs-4">
+    <h2>PROJECT MANAGER</h2>
+  </div>
+  <div class="col-xs-4">
+    <h2>FINANCE TRACKER</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-4">
+    <div class="parent-work">
+      <div class="child-work child-work-overlay work1">
+        <span class="span-work">
+          <button class="btn btn-info button-work" data-toggle="modal" data-target="#blogModal">
+            See description
+          </button>
+          <br>
+          <%= link_to "Go to project page", 'https://alpha-blog-di-bari.herokuapp.com/articles',
+            target: :_blank %>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="parent-work">
+      <div class="child-work child-work-overlay work2">
+        <span class="span-work">
+          <button class="btn btn-info button-work" data-toggle="modal" data-target="#saasModal">
+            See description
+          </button>
+          <br>
+          <%= link_to "Go to project page", 'https://saas-app-dibari.herokuapp.com/',
+            target: :_blank %>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="parent-work">
+      <div class="child-work child-work-overlay work3">
+        <span class="span-work">
+          <button class="btn btn-info button-work" data-toggle="modal" data-target="#financeModal">
+            See description
+          </button>
+          <br>
+          <%= link_to "Go to project page", 'https://finance-tracker-di-bari.herokuapp.com',
+            target: :_blank %>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" align="center">
+  <div class="col-xs-4">
+    <h2>MUNDO GAMES</h2>
+  </div>
+  <div class="col-xs-4">
+    <h2>BANK MANAGEMENT</h2>
+  </div>
+  <div class="col-xs-4">
+    <%#= image_tag "portfolio/upwork.png", style: "max-height: 63px" %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-4">
+    <div class="parent-work">
+      <div class="child-work child-work-overlay work4">
+        <span class="span-work">
+          <button class="btn btn-info button-work" data-toggle="modal" data-target="#mundogamesModal">
+            See description
+          </button>
+          <br>
+          <%= link_to "Go to project page", 'https://mundo-games.herokuapp.com/products',
+            target: :_blank %>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="parent-work">
+      <div class="child-work child-work-overlay work5">
+        <span class="span-work">
+          <button class="btn btn-info button-work" data-toggle="modal" data-target="#bankModal">
+            See description
+          </button>
+          <br>
+          <i>No link available</i>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div align="center" class="col-xs-4">
+    <%= link_to image_tag("portfolio/upwork.png", class: "upwork-title"), "https://www.upwork.com/", target: :_blank %>
+    <h2>
+      <%= link_to "Hire me!",
+        "https://www.upwork.com/signup/create-account/client_contact_freelancer?ciphertext=~01266cd66664792cfe&BYOC",
+        target: :_blank %>
+    </h2>
+    <h4>
+      Contact me if you want a web developer.
+      <br>
+      Upwork selected me as a
+      <br>
+      <%= fa_icon "star-o" %> RISING TALENT <%= fa_icon "star-o" %>
+      <br>
+      You can check my profile out
+      <%= link_to "here", "https://www.upwork.com/o/profiles/users/_~01266cd66664792cfe/",
+        target: :_blank %>
+    </h4>
+  </div>
+</div>
+
+<%= render "home/main/modals" %>

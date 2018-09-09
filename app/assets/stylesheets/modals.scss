@@ -1,0 +1,36 @@
+.modal-content {
+  background-color: black !important;
+  border-color: cyan !important;
+}
+
+.modal-header {
+  border-bottom: 1px solid cyan !important;
+}
+
+.modal-body {
+  text-align: justify;
+}
+
+.modal-footer {
+  border-top: 1px solid cyan !important;
+  
+  button {
+    border: 1px solid rgba(0,255,255,1) !important;
+    //border-radius: 0px !important;
+    color: rgba(0,255,255,1) !important;
+    background: rgba(0,0,0,0) !important;
+    -webkit-transition: color .25s cubic-bezier(0, 0, 0, 0), border-color .25s cubic-bezier(0, 0, 0, 0);
+    -moz-transition: color .25s cubic-bezier(0, 0, 0, 0), border-color .25s cubic-bezier(0, 0, 0, 0);
+    -o-transition: color .25s cubic-bezier(0, 0, 0, 0), border-color .25s cubic-bezier(0, 0, 0, 0);
+    transition: color .25s cubic-bezier(0, 0, 0, 0), border-color .25s cubic-bezier(0, 0, 0, 0);
+    
+    &:hover {
+      color: white !important;
+      border-color: white !important;
+    }
+    
+    &:active {
+      color: cyan !important;
+    }
+  }
+}

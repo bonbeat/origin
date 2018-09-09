@@ -1,0 +1,76 @@
+<%= render "home/header/header_top" %>
+
+<% intro1 = "I'm a programmer that has solid knowledge of Ruby
+  on Rails framework for web developing. I have previous experience completing two
+  courses in Udemy that included normal backend content and another to learn
+  Behavior Driven Development (BDD) to have good practices testing features.
+  I also read the " %>
+<% intro2 = " from Michael Hartl. I have enough understanding of SQL language, experience with
+  PostgreSQL, MySQL and SQLite. Other known languages: Java, C, Pascal." %>
+
+<% what_I_do = "I'm specializing in developing web pages with the Ruby on Rails
+  framework. I follow the Don't Repeat Yourself (DRY) phrase to avoid repeating
+  code. I also work using RSpec, Capybara and Guard for test development. I always
+  like to learn more, so I'm not limited to what I know now. I learned BDD to
+  improve my backend skills, now I'm learning Angular 4 to do the same with the
+  frontend ones. To see a little of what I can do, see my portfolio." %>
+<% what_I_do2 = "I can make desktop apps with Java and C too." %>
+
+<div class="row header">
+<div class="col-xs-12">
+  <div class="row" style="margin-bottom: 20px;">
+    <div class="col-xs-12">
+      <h1 align="center">ARE YOU LOOKING FOR A WEB DEVELOPER?</h1>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div align="center" class="col-xs-offset-4 col-xs-4">
+      <button class="button-yes-header">YES!</button>
+    </div>
+    
+    <div align="center" class="col-xs-3">
+      <h2>
+        <%= link_to "NO?", "https://www.google.com", class: "link-no-header" %>
+        <%#= link_to "Look for anything else in Google" + fa_icon("sign-out"), "https://www.google.com",
+          class: "link-no-header-2", style: "display: none;" %>
+      </h2>
+      <h4>
+        <a class="link-no-header-2" href="https://www.google.com" style="display: none;">
+          Look for anything else in Google <%= fa_icon "sign-out" %>
+        </a>
+      </h4>
+    </div>
+  </div>
+  
+  <div class="row" style="margin-top: 50px;">
+    <div align="right" class="col-xs-4">
+      <button class="button-whoIam">WHO I AM</button>
+    </div>
+    <div align="center" class="col-xs-4">
+      <button class="button-portfolio">PORTFOLIO</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="button-whatIdo">WHAT I DO</button>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-offset-1 col-xs-10">
+      <h3 align="justify" class="intro" style="margin-top: 30px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <%= intro1 %>
+        <%= link_to "Rails Tutorial online book", 'https://www.railstutorial.org/', target: :_blank %>
+        <%= intro2 %>
+      </h3>
+      
+      <h3 align="justify" class="intro2" style="margin-top: 30px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <%= what_I_do %>
+        <br><br>
+        <%= what_I_do2 %>
+      </h3>
+    </div>
+  </div>
+</div>
+</div><!--.row .header-->
